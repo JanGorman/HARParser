@@ -28,4 +28,4 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
-
+.swiftpm/

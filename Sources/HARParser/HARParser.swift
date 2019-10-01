@@ -32,17 +32,17 @@ public struct HAR: Codable {
 
   /// The .har version
   public var version: String {
-    return log.version
+    log.version
   }
 
   /// THe .har creator
   public var creator: Creator {
-    return log.creator
+    log.creator
   }
 
   /// The .har entries
   public var entries: [Entry] {
-    return log.entries
+    log.entries
   }
 
   struct Log: Codable {
@@ -102,7 +102,7 @@ public struct Content: Codable {
   public let mimeType: String
   public let data: Data
   public var text: String? {
-    return String(data: data, encoding: .utf8)
+    String(data: data, encoding: .utf8)
   }
 
   enum CodingKeys: String, CodingKey {
